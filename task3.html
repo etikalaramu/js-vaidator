@@ -1,0 +1,111 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+  .container{
+        margin: auto;
+        width: 100%;
+       padding: 20px;
+    }
+   #row{
+       border: 1px solid black;
+   }
+  #left{
+      margin-left: -16px;
+      height: 100%;
+  }
+  h4{
+      color: white;
+  }
+  #right{
+      height: 100%;
+      width: 100%;
+  }
+  p{
+      color: white;
+  }
+</style>
+</head>
+<body>
+    <div class="container was-validated">
+        <div class="row" id="row">
+            <div class="col-lg-6" id="left">
+                <div class="card bg-primary">
+                    <div class="card-body text-left">
+                        <h4 class="card-title">INFORMATION</h4>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum est arcu, vel tempus risus cursus id. Sed tincidunt justo ac nunc euismod eleifend. Duis euismod, sem vitae viverra luctus, neque justo imperdiet leo, accumsan rhoncus lectus tellus et nisl. Vivamus aliquet purus ut sapien hendrerit lacinia. Donec faucibus, sem in efficitur elementum, urna diam pretium nisi, ac varius enim sem ut dui. Nulla vulputate luctus massa sit amet tristique. Etiam iaculis metus in dolor tincidunt, eget vehicula odio gravida. Integer hendrerit et tortor in vestibulum. Vestibulum feugiat mi neque, quis finibus arcu mollis sit amet. Sed vitae pretium orci. Proin a est in risus sodales mollis id in magna. Integer quis orci turpis. Nulla blandit leo ante, quis scelerisque purus sodales eget.</p>
+                      <a href="#" class="btn btn-light">Have an Account</a>                      
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-6" id="right">
+                <form class="form-horizontal">
+                    <div class="col-lg-12">
+                        <h3>REGISTRATION FORM</h3>
+                    </div>
+                    
+                    <div class="row">
+                       <div class="col-lg-6">
+                        <label for="fname">First Name</label><br>
+                        <input type="text" class="form-control" id="fname" required>
+                        <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+                       </div>
+                       <div class="col-lg-6">
+                        <label for="lname">Last Name</label><br>
+                        <input type="text" class="form-control" id="lname" required>
+                        <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+                       </div>
+                    </div>
+                </form>
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                        <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                </form>
+                <form class="form-horizontal">
+                    <div class="row">
+                        <div class="col-lg-6">
+                         <label for="fname">Password</label><br>
+                         <input type="password" class="form-control" id="pwd" required>
+                         <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                        <div class="col-lg-6">
+                         <label for="lname">Confirm Password</label><br>
+                         <input type="password" class="form-control" id="pwd" required>
+                         <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                     </div>
+                </form>
+                <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value="">I agree to  the <a href="#">Terms and Conditions</a>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <button type="button" id="button" class="btn btn-primary mt-3">Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

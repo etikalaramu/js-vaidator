@@ -1,0 +1,160 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+     html,body{
+        height: 100%;
+    }
+    
+    .container{
+        margin: auto;
+        width: 100%;
+       padding: 20px;
+    }
+    img{
+        height: 100%;
+        width: 100%;
+        margin-left: -16px;
+    }
+    #row{
+        background-color: black;
+        
+    }
+    #right{
+        color: white;
+        margin-left: -16px;
+    }
+    .btn{
+        background-color: darksalmon;
+        color: white;
+    }
+    span{
+        color: darksalmon;
+    }
+    #trans{
+        background: transparent;
+        color: silver;
+    }
+    
+</style>
+</head>
+<body>
+    <div class="container was-validated">
+         <div class="row" id="row">
+              <div id="mydiv" class="col-lg-6">
+                   <img src="2.jpg" alt="dining">
+              </div>
+              <div class="col-lg-6" id="right">
+                <form action="#" name="f1">
+                  <h3 style="text-align: center;">Booking Place for Your Dinner!</h3>
+                 <div class="form-froup">
+                       <input class="form-control mb-2" type="text" name="name" placeholder="Your name" id="trans" required>
+                       <div class="valid-feedback">Valid.</div>
+                       <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+                <div class="form-group"> 
+                  <input class="form-control mb-2" type="text" name="phone" placeholder="Your phone number" id="trans" required>
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+                <div class="form-group">
+                  <select class="form-control mb-2" id="trans" name="sel1" required>
+                    <option></option>
+                    <option>10:00 AM-11:00 AM</option>
+                    <option>11:00AM-12:00 PM</option>
+                  </select>
+                  <div class="valid-feedback">Valid.</div>
+                      <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+                  <div class="form-group">
+                    <select class="form-control mb-2" id="trans" name="sel2" required>
+                      <option></option>
+                      <option>Idly</option>
+                      <option>Dosa</option>
+                    </select>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                  </div>     
+                      
+                      
+                      <div class="form-group">
+                          <label>Select your dining space</label><br>
+                          <div class="form-check-inline">
+                            <label class="form-check-label">
+                              <input type="radio" class="form-check-input" name="optradio">2
+                            </label>
+                          </div>
+                          <div class="form-check-inline">
+                            <label class="form-check-label">
+                              <input type="radio" class="form-check-input" name="optradio">3
+                            </label>
+                          </div>
+                          <div class="form-check-inline">
+                            <label class="form-check-label">
+                              <input type="radio" class="form-check-input" name="optradio">4
+                            </label>
+                          </div>
+                          <div class="form-check-inline">
+                            <label class="form-check-label">
+                              <input type="radio" class="form-check-input" name="optradio">5
+                            </label>
+                          </div>
+                          <div class="form-check-inline">
+                            <label class="form-check-label">
+                              <input type="radio" class="form-check-input" name="optradio">6
+                            </label>
+                          </div>
+                        </div>
+                          <div class="form-group">
+                              <button type="button" class="btn mt-3" onclick="fun1()">Book now</button>
+                          </div>
+                          <div class="form-group">
+                            <span>verify your booking info from your phone</span>
+                          </div>
+                      
+                  </form>
+              </div>
+         </div>
+    </div>
+    <script>
+        function fun1(){
+          if(document.f1.name.value==""){
+            document.f1.name.focus();
+            alert("please fill name")
+          }
+          if(document.f1.phone.value==""){
+            document.f1.phone.focus();
+            alert("please enter mobile")
+          }
+          if(document.f1.sel1.value==""){
+            document.f1.sel1.focus()
+            alert("please fill select box")
+          }
+          if(document.f1.sel2.value==""){
+            document.f1.sel2.focus()
+            alert("please fill select box")
+          }
+          var option=document.getElementsByName('optradio');
+         if (!(option[0].checked || option[1].checked || option[2].checked || option[3].checked || option[4].checked)) {
+                 alert("Please select persons");
+          }
+          else{
+            alert('success');
+          }
+        }
+    </script>
+</body>
+</html>

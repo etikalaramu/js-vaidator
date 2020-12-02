@@ -1,0 +1,161 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+    #right{
+        background-color: aquamarine;
+    }
+    #row{
+        border: 1px solid black;
+    }
+    .form-control{
+        background: transparent;
+        color: white;
+    }
+    .container{
+        margin: auto;
+        width: 100%;
+       padding: 20px;
+    }
+    #h4{
+          color: blue;
+    }
+</style>
+</head>
+<body>
+    <div class="container was-validated">
+        <div class="row" id="row">
+             <div class="col-lg-6">
+                  <h4 id="h4">General Information</h4>
+                   <div class="form-group mt-2">
+                      <select class="form-control" id="trans" aria-placeholder="Title" required>
+                        <option></option>
+                        <option>One</option>
+                        <option>Two</option>
+                      </select>
+                      <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                   </div>
+                        <div class="row">     
+                                        <div class="col-lg-6">
+                                            <input type="text" class="form-control" id="fname" required>
+                                            <div class="valid-feedback">Valid.</div>
+                                            <div class="invalid-feedback">Please fill out this field.</div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <input type="text" class="form-control" id="lname" required>
+                                            <div class="valid-feedback">Valid.</div>
+                                            <div class="invalid-feedback">Please fill out this field.</div>
+                                        </div>     
+                       </div>
+                       <div class="form-group">
+                        <select class="form-control" id="trans" placeholder="Position" required>
+                          <option></option>
+                          <option>IT</option>
+                          <option>Marketing</option>
+                        </select>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                     </div>
+                     <div class="form-group">
+                        <input class="form-control mb-2" type="text" name="name" placeholder="Company" id="trans" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                     </div>
+                     <div class="row">     
+                        <div class="col-lg-7">
+                            <input type="text" class="form-control" id="fname" required>
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                        <div class="col-lg-5">
+                            <select class="form-control" id="trans" placeholder="Position" required>
+                                <option></option>
+                                <option>Idly</option>
+                                <option>Dosa</option>
+                              </select>
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>     
+                    </div>
+             </div>
+             <div class="col-lg-6" id="right">
+                 <h4>Contact Details</h4>
+                 <div class="form-group">
+                    <input class="form-control mb-2" type="text" name="name" placeholder="Street + Nr" id="trans" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                 </div>
+                 <div class="form-group">
+                    <input class="form-control mb-2" type="text" name="name" placeholder="Additional Information" id="trans" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                 </div>
+                 <div class="row">     
+                    <div class="col-lg-7">
+                        <input type="number" placeholder="ZipCode" class="form-control" id="fname" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="col-lg-5">
+                        <select class="form-control" id="trans" placeholder="Position" required>
+                            <option></option>
+                            <option>Ameerpet</option>
+                            <option>Sr Nagar</option>
+                          </select>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>     
+                </div>
+                <div class="form-group">
+                    <select class="form-control" id="trans" aria-placeholder="Country" required>
+                      <option></option>
+                      <option>India</option>
+                      <option>Australia</option>
+                    </select>
+                    <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">Please fill out this field.</div>
+                 </div>
+                 <div class="row">     
+                    <div class="col-lg-5">
+                        <input type="number" class="form-control" id="fname" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="col-lg-7">
+                        <input type="number" class="form-control" id="fname" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>     
+                </div>
+                <div class="form-group">
+                    <input class="form-control mb-2" type="text" name="name" placeholder="Your Email" id="trans" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                 </div>
+                 <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value="">I agree to  the <a href="#">Terms and Conditions</a>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <button type="button" id="button" class="btn btn-light mt-3">Register Badge</button>
+                </div>
+             </div>
+        </div>
+    </div>
+</body>
+</html>
